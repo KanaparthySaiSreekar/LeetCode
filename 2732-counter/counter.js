@@ -5,10 +5,13 @@
 var createCounter = function(n) {
     
     return function() {
-
-        return n++;
+        current = n;
+        current += 1;
+        n = current;
+        return current -= 1;
     };
 };
+
 /** 
  * const counter = createCounter(10)
  * counter() // 10
