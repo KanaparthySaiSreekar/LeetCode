@@ -3,7 +3,7 @@ class Solution {
         if(x<0){
             return false;
         }
-        if(x==0 || x/10==0)
+        if(x==0)
             return true;
         int r=0;
         int t=x;
